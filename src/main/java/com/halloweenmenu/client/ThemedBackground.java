@@ -31,7 +31,6 @@ public final class ThemedBackground {
         if (scene == null) {
             scene = new ParallaxScene();
             try {
-                client.getTextureManager().bindTexture(McPainter.SCENE_TEXTURE);
                 client.getTextureManager().getTexture(McPainter.SCENE_TEXTURE).setFilter(true, false);
             } catch (Throwable ignored) {
                 // не критично

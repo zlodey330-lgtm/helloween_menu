@@ -93,7 +93,6 @@ public final class HalloweenScreen extends Screen {
         }
         try {
             // сглаживание текстуры сцены (иначе будет «пикселями»)
-            client.getTextureManager().bindTexture(McPainter.SCENE_TEXTURE);
             client.getTextureManager().getTexture(McPainter.SCENE_TEXTURE).setFilter(true, false);
         } catch (Throwable ignored) {
             // не критично
